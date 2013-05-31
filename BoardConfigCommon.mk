@@ -77,6 +77,9 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 # Audio
 TARGET_QCOM_AUDIO_VARIANT := caf 
 
+# Display
+TARGET_QCOM_DISPLAY_VARIANT := caf
+
 #toolchain
 TARGET_GCC_VERSION := 4.6
 TARGET_USE_O3 := false
