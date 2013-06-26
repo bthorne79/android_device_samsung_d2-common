@@ -157,22 +157,22 @@ PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
 # APN distingushing fix
-ifneq ($(TARGET_BUILD_VARIANT),d2vzw)
+ifneq ($(TARGET_PRODUCT),pa_d2vzw)
 PRODUCT_COPY_FILES += \
         device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
-ifneq ($(TARGET_BUILD_VARIANT),d2spr)
+ifneq ($(TARGET_PRODUCT),pa_d2spr)
 PRODUCT_COPY_FILES += \
         device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
-ifneq ($(TARGET_BUILD_VARIANT),d2usc)
+ifneq ($(TARGET_PRODUCT),pa_d2usc)
 PRODUCT_COPY_FILES += \
         device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
-ifneq ($(TARGET_BUILD_VARIANT),d2mtr)
+ifneq ($(TARGET_PRODUCT),pa_d2mtr)
 PRODUCT_COPY_FILES += \
         device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
