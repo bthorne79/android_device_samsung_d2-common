@@ -156,26 +156,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
-# APN distingushing fix
-ifneq ($(TARGET_PRODUCT),pa_d2vzw)
-PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2spr)
-PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2usc)
-PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2mtr)
-PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
-endif
 
 # common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
