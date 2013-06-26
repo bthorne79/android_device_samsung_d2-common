@@ -74,8 +74,4 @@ BOARD_HAVE_AUDIENCE_A2220 := true
 # Use USB Dock Audio
 BOARD_HAVE_DOCK_USBAUDIO := true
 
-#toolchain
-TARGET_GCC_VERSION := 4.6
-TARGET_USE_O3 := false
-TARGET_USE_O2 := true
 
