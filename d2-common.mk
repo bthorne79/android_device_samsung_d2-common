@@ -148,11 +148,7 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 # NFCEE access control
-ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := device/samsung/d2-common/nfc/nfcee_access.xml
-else
-    NFCEE_ACCESS_PATH := device/samsung/d2-common/nfc/nfcee_access_debug.xml
-endif
+NFCEE_ACCESS_PATH := device/samsung/d2-common/nfc/nfcee_access.xml
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
