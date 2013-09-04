@@ -73,3 +73,6 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_BSP_CAMERA_ABI_HACK
 
 # Separate audio devices for VOIP
 BOARD_USES_SEPERATED_VOIP := true
+
+# Enable dalvik startup with a low memory footprint
+TARGET_ARCH_LOWMEM := true 
