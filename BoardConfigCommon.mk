@@ -32,9 +32,7 @@ BOARD_KERNEL_BASE           := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 BOARD_KERNEL_PAGESIZE       := 2048
 TARGET_KERNEL_VARIANT_CONFIG := cyanogen_d2_defconfig
-ifeq ($(HAVE_SELINUX),true)
 TARGET_KERNEL_SELINUX_CONFIG := m2selinux_defconfig
-endif
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
@@ -82,3 +80,30 @@ BOARD_USES_SEPERATED_VOIP := true
 
 # Enable dalvik startup with a low memory footprint
 TARGET_ARCH_LOWMEM := true 
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+        device/samsung/d2-common/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+        file_contexts \
+        app.te \
+        bluetooth.te \
+        device.te \
+        domain.te \
+        drmserver.te \
+        file.te \
+        hci_init.te \
+        healthd.te \
+        init.te \
+        init_shell.te \
+        keystore.te \
+        kickstart.te \
+        mediaserver.te \
+        nfc.te \
+        rild.te \
+        surfaceflinger.te \
+        system.te \
+        ueventd.te \
+        wpa.te \
+        wpa_socket.te
