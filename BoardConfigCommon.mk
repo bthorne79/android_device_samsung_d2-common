@@ -81,6 +81,9 @@ BOARD_USES_SEPERATED_VOIP := true
 # Enable dalvik startup with a low memory footprint
 TARGET_ARCH_LOWMEM := true 
 
+#USE_SET_METADATA tag
+USE_SET_METADATA := false
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
         device/samsung/d2-common/sepolicy
