@@ -36,6 +36,9 @@ TARGET_KERNEL_SELINUX_CONFIG := m2selinux_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+# Adreno configuration
+BOARD_EGL_CFG := device/samsung/d2-common/configs/egl.cfg
+
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/d2-common/recovery/recovery_keys.c
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
@@ -43,6 +46,7 @@ BOARD_USES_MMCUTILS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_FSTAB := device/samsung/d2-common/rootdir/etc/fstab.qcom
 
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -77,9 +81,6 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Separate audio devices for VOIP
 BOARD_USES_SEPERATED_VOIP := true
-
-# Enable dalvik startup with a low memory footprint
-TARGET_ARCH_LOWMEM := true 
 
 #USE_SET_METADATA tag
 USE_SET_METADATA := false
