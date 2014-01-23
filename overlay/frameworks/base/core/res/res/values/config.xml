@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
@@ -254,7 +255,7 @@
     <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+    <!--bool name="config_multiColorBatteryLed">true</bool-->
 
 <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
@@ -304,7 +305,7 @@
     </integer-array>
 
     <!-- Workaround for devices with broken keyboards -->
-    <bool name="config_forceDisableHardwareKeyboard">true</bool>
+    <!--bool name="config_forceDisableHardwareKeyboard">true</bool-->
 
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
@@ -322,7 +323,7 @@
             16 - App switch
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
+    <!--integer name="config_deviceHardwareKeys">7</integer-->
 
     <bool name="config_enableWifiDisplay">true</bool>
 
@@ -330,9 +331,12 @@
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
     <!-- Panel auto brightness value -->
-    <integer name="config_panelAutoBrightnessValue">1</integer>
+    <!--integer name="config_panelAutoBrightnessValue">1</integer-->
 
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
+    <!-- Device supports LED flashlight -->
+    <bool name="config_enableTorch">true</bool>
 
 </resources>
